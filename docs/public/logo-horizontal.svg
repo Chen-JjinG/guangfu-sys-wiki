@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 64" role="img" aria-label="国华光伏建设管理系统">
+  <rect width="64" height="64" rx="14" fill="#FFF4E8"/>
+  <circle cx="32" cy="24" r="11" fill="#F4A259"/>
+  <path d="M14 30c6-6 12-6 18 0" fill="none" stroke="#E07A3D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M32 30c6-6 12-6 18 0" fill="none" stroke="#E07A3D" stroke-width="2" stroke-linecap="round"/>
+  <rect x="14" y="36" width="36" height="16" rx="2" fill="#C65D2E"/>
+  <path d="M14 42h36M26 36v16M38 36v16" stroke="#FFE7C2" stroke-width="1.4"/>
+  <text x="80" y="30" fill="#C65D2E" font-size="22" font-family="PingFang SC, Noto Sans SC, Microsoft YaHei, sans-serif" font-weight="700">国华光伏</text>
+  <text x="80" y="52" fill="#8A5A3A" font-size="14" font-family="PingFang SC, Noto Sans SC, Microsoft YaHei, sans-serif">建设管理系统</text>
+</svg>

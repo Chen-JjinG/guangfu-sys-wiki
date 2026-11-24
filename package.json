@@ -1,0 +1,15 @@
+{
+  "name": "guohua-pv-user-guide",
+  "private": true,
+  "type": "module",
+  "description": "国华光伏建设管理系统使用说明（静态文档站）",
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host 127.0.0.1 --port 5173",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 127.0.0.1 --port 4173",
+    "site": "vitepress build docs && node scripts/sync-site.mjs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
