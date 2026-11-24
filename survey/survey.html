@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>电站勘察 · 国华光伏建设管理系统</title>
+  <meta name="description" content="国华光伏建设管理系统使用说明：电脑端与现场端各模块的操作指南">
+  <link rel="icon" href="../images/logo.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="">
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <img src="../images/logo.svg" alt="国华光伏标志">
+      <span>国华光伏 <span class="full">使用说明</span></span>
+    </a>
+    <button type="button" class="header-search" data-open-search>搜索 <kbd>Ctrl K</kbd></button>
+    <nav class="top-nav"><a href="../start/overview.html">总体说明</a><a href="../appendix/accounts.html">演示账号</a><a href="../start/login.html">登录与两端</a><a href="../install/dispatch.html">安装施工</a><a href="../appendix/tips.html">附录</a></nav>
+    <button type="button" class="hamburger" aria-label="打开目录"><span></span></button>
+  </header>
+  <div class="sidebar-mask"></div>
+  <div class="layout">
+    <aside class="sidebar" aria-label="站点目录"><div class="sidebar-group"><button type="button" class="sidebar-title">开始<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../start/overview.html">总体说明</a><a href="../start/quick-start.html">快速上手</a><a href="../start/login.html">登录与两端</a><a href="../start/roles.html">角色与权限</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">业主与商机<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../owner/owner.html">业主管理</a><a href="../owner/opportunity.html">商机初勘</a></div></div><div class="sidebar-group open"><button type="button" class="sidebar-title">勘察与签约<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../survey/survey.html" class="active">电站勘察</a><a href="../survey/subsidy.html">业主补贴</a><a href="../survey/contract.html">合同签约</a><a href="../survey/filing.html">备案登记</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">设计与开工准备<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../design/design.html">电站设计</a><a href="../design/archive.html">电站建档</a><a href="../design/stock.html">电站备货</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">安装施工<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../install/dispatch.html">派工与安全打卡</a><a href="../install/pick.html">工程领料</a><a href="../install/review.html">施工复核</a><a href="../install/bracket.html">支架报装</a><a href="../install/electric.html">电气报装</a><a href="../install/meter.html">电表安装</a><a href="../install/selfcheck.html">完工自检</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">产权与消缺<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../property/property.html">产权证明</a><a href="../property/defect.html">消缺工单</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">审核与工单<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../audit/audit.html">审核中心</a><a href="../audit/workorder.html">工单中心</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">系统设置<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../settings/approval.html">审批设置</a><a href="../settings/brand.html">现场端品牌</a><a href="../settings/org.html">组织与安装队</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">附录<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../appendix/tips.html">常见提示</a><a href="../appendix/accounts.html">演示账号</a><a href="../appendix/not-open.html">当前未开放的能力</a><a href="../appendix/station.html">电站查询（简要）</a></div></div></aside>
+    <div class="content-wrap">
+      <main class="content"><h1 id="电站勘察">电站勘察</h1>
+<h2 id="这个模块干什么">这个模块干什么</h2>
+<p>商机初勘审核通过后，系统生成电站勘察单，由现勘员到现场定位打卡、填写屋顶和安装条件、上传取证照片，再提交审核。勘察通过后，业主补贴和电站签约同时开启。</p>
+<h2 id="谁来用">谁来用</h2>
+<p>现勘员（如 <code>surveyor</code>、<code>surveyor2</code>）办理。审核员负责通过或驳回。</p>
+<h2 id="从哪里进入">从哪里进入</h2>
+<ul><li>现场端：「应用」→「电站开发」→「电站勘察」，或从首页工单中心进入待办。</li><li>电脑端：首页或「开发/交付」中的「电站勘察」。</li></ul>
+<p><img class="shot" src="../images/h5-survey-list.png" alt="现场端电站勘察列表：待勘察为橙色，行内有详情、编辑、终止、转派、优先级"></p>
+<p class="caption">图：现场端电站勘察列表。待勘察状态下有「详情」「编辑」「终止」「转派」「优先级」。地址中的「余杭」是真实地名。</p>
+<h2 id="操作步骤">操作步骤</h2>
+<ol><li>打开「待勘察」中的单据。如需交给其他现勘员，点「转派」，选择接收人后确定。转派后，原处理人的待办中不再出现这张单。</li><li>需要加急时，点「优先级」。当前演示环境可选「正常」或「加急」。</li><li>进入表单后，先完成「现勘定位打卡」。未定位就提交，系统会提示「不满足限制提交条件：请先完成现勘定位打卡」。</li><li>填写测绘和屋顶信息，例如并网接入点距离、安装条件是否合格、是否禁飞区、车辆能否直达、屋顶类型、安装方式、单片功率、屋顶尺寸和容配比等。带星号的为必填。</li><li>按照片位上传取证，至少包括正大门、主房房屋整体，以及其他页面要求的环境照片。屋顶排布图请自行上传，系统不会自动计算排布或出图。</li><li>检查完成后提交。</li></ol>
+<p>若勘察中发现需要消缺，可在「是否消缺」中选择「是」，后续在 <a href="../property/defect.html">消缺工单</a> 中继续办理。</p>
+<h2 id="状态与按钮">状态与按钮</h2>
+<table><thead><tr><th>状态</th><th>常见按钮</th></tr></thead><tbody><tr><td>待勘察</td><td>详情、编辑、终止、转派、优先级</td></tr><tr><td>撤回待提交、审核驳回</td><td>详情、编辑、终止</td></tr><tr><td>待审核</td><td>详情</td></tr><tr><td>已完成、关闭</td><td>详情</td></tr></tbody></table>
+<p>页签角标与页签名称一致。筛选会真正拦住列表。没有写权限时只能查看。</p>
+<p>系统提交时会校验勘察坐标，以及正大门、主房两类照片；其他带星号的照片位不一定会逐项拦住。提交前请自己检查是否拍全。</p>
+<h2 id="提交之后会发生什么">提交之后会发生什么</h2>
+<p>审批启用时进入待审核；通过后单据变为已完成，业主补贴和电站签约同时开启。驳回后回到可编辑状态，修改后重新提交将从第一个审批节点开始。</p>
+<h2 id="注意事项">注意事项</h2>
+<ul><li>演示环境里若出现「使用示例定位」「填入示例取证」，只是演示辅助，不能当作正式步骤。正式办理请在现场真实定位并拍照。</li><li>「特殊方案」等字段按页面选项手选或填写，不要理解为系统已自动匹配方案。</li></ul><nav class="pager"><a class="prev" href="../owner/opportunity.html"><span class="label">上一页</span>商机初勘</a><a class="next" href="../survey/subsidy.html"><span class="label">下一页</span>业主补贴</a></nav>
+        <p class="site-footer">国华光伏建设管理系统 · 使用说明（按当前演示环境整理）<br>操作以线上实际界面为准</p>
+      </main>
+    </div>
+    <nav class="toc" aria-label="本页目录"><h2>本页目录</h2><a class="l2" href="#这个模块干什么">这个模块干什么</a><a class="l2" href="#谁来用">谁来用</a><a class="l2" href="#从哪里进入">从哪里进入</a><a class="l2" href="#操作步骤">操作步骤</a><a class="l2" href="#状态与按钮">状态与按钮</a><a class="l2" href="#提交之后会发生什么">提交之后会发生什么</a><a class="l2" href="#注意事项">注意事项</a></nav>
+  </div>
+  <div class="search-mask" role="dialog" aria-label="搜索">
+    <div class="search-box">
+      <input class="search-input" type="search" placeholder="搜索使用说明…" autocomplete="off">
+      <div class="search-results"><div class="search-hint">输入关键词，例如「派工」「电表」「演示账号」。</div></div>
+    </div>
+  </div>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

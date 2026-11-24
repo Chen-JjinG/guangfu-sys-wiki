@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>派工与安全打卡 · 国华光伏建设管理系统</title>
+  <meta name="description" content="国华光伏建设管理系统使用说明：电脑端与现场端各模块的操作指南">
+  <link rel="icon" href="../images/logo.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="">
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <img src="../images/logo.svg" alt="国华光伏标志">
+      <span>国华光伏 <span class="full">使用说明</span></span>
+    </a>
+    <button type="button" class="header-search" data-open-search>搜索 <kbd>Ctrl K</kbd></button>
+    <nav class="top-nav"><a href="../start/overview.html">总体说明</a><a href="../appendix/accounts.html">演示账号</a><a href="../start/login.html">登录与两端</a><a href="../install/dispatch.html" class="active">安装施工</a><a href="../appendix/tips.html">附录</a></nav>
+    <button type="button" class="hamburger" aria-label="打开目录"><span></span></button>
+  </header>
+  <div class="sidebar-mask"></div>
+  <div class="layout">
+    <aside class="sidebar" aria-label="站点目录"><div class="sidebar-group"><button type="button" class="sidebar-title">开始<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../start/overview.html">总体说明</a><a href="../start/quick-start.html">快速上手</a><a href="../start/login.html">登录与两端</a><a href="../start/roles.html">角色与权限</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">业主与商机<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../owner/owner.html">业主管理</a><a href="../owner/opportunity.html">商机初勘</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">勘察与签约<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../survey/survey.html">电站勘察</a><a href="../survey/subsidy.html">业主补贴</a><a href="../survey/contract.html">合同签约</a><a href="../survey/filing.html">备案登记</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">设计与开工准备<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../design/design.html">电站设计</a><a href="../design/archive.html">电站建档</a><a href="../design/stock.html">电站备货</a></div></div><div class="sidebar-group open"><button type="button" class="sidebar-title">安装施工<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../install/dispatch.html" class="active">派工与安全打卡</a><a href="../install/pick.html">工程领料</a><a href="../install/review.html">施工复核</a><a href="../install/bracket.html">支架报装</a><a href="../install/electric.html">电气报装</a><a href="../install/meter.html">电表安装</a><a href="../install/selfcheck.html">完工自检</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">产权与消缺<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../property/property.html">产权证明</a><a href="../property/defect.html">消缺工单</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">审核与工单<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../audit/audit.html">审核中心</a><a href="../audit/workorder.html">工单中心</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">系统设置<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../settings/approval.html">审批设置</a><a href="../settings/brand.html">现场端品牌</a><a href="../settings/org.html">组织与安装队</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">附录<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../appendix/tips.html">常见提示</a><a href="../appendix/accounts.html">演示账号</a><a href="../appendix/not-open.html">当前未开放的能力</a><a href="../appendix/station.html">电站查询（简要）</a></div></div></aside>
+    <div class="content-wrap">
+      <main class="content"><h1 id="派工与安全打卡">派工与安全打卡</h1>
+<h2 id="这个模块干什么">这个模块干什么</h2>
+<p>建档审核通过后，安装队派工与电站备货同时开启。安装队负责人新建批量派工，把一座或多座电站派给指定安装队，并登记计划工期和提货仓库。派工完成后，被派到的电站才能办理领料、复核、报装，并开展安全打卡。</p>
+<h2 id="谁来用">谁来用</h2>
+<p>只有安装队负责人（队长）才能新建派工批次和改派。演示账号为 <code>crew</code>、<code>crew2</code>、<code>crew3</code>。普通队员不能建单或改派。管理角色可以查看，但不代为填写或提交。</p>
+<h2 id="从哪里进入">从哪里进入</h2>
+<ul><li>现场端：「应用」→「电站建设」→「安装队派工」。派工查询在相关页签中，不单独占据宫格。</li><li>电脑端：首页「安装队派工」「派工查询」。</li></ul>
+<p>现场端也可以从「电站建设」进入「安全打卡」。</p>
+<h2 id="批量派工怎么做">批量派工怎么做</h2>
+<ol><li>使用队长账号打开「安装队派工」，点新建。</li><li>选择工程服务商，再选择该服务商下的安装队。安装队负责人和电话会自动带出。</li><li>填写安装队标准单价、计划开工日期、计划完工日期和提货仓库。送货司机、电话和备注为选填。计划完工不能早于计划开工。</li><li>勾选要派工的电站。没有勾选电站不能提交。</li><li>提交后进入审核。计划日期未填写时，系统会提示不满足限制提交条件。</li></ol>
+<p>派工明细会记录派单人、派单日期、安装队长和计划日期。一座电站同一时间只有一条有效明细；改派时，原明细作废，再按新的批次派发，并写入操作日志。</p>
+<p>备案尚未完成时，派工即便已经开启，提交仍可能被限制。请以页面上的「限制提交」提示为准。</p>
+<h2 id="状态与按钮">状态与按钮</h2>
+<p>派工查询常见状态包括待派工、派工中、待审核、已完成、审核驳回和关闭。加入批次后为「派工中」，负责人在详情中确认并提交后进入待审核，通过后为已完成。</p>
+<p>未派给本队的电站，现场负责人在建设类列表中看不到。电表安装同样跟随有效派工明细。</p>
+<h2 id="提交之后会发生什么">提交之后会发生什么</h2>
+<p>派工审核通过后，开启 <a href="../install/review.html">施工复核</a>；<a href="../install/pick.html">工程领料</a> 在备货通过后已经开启，但必须等派工完成后才能提交。被派工的电站可以开始安全打卡。</p>
+<h2 id="安全打卡">安全打卡</h2>
+<p>安全打卡只跟已派工的施工电站，不参与领料、复核、报装的开启或限制提交。状态只有「打卡中」和「已关闭」，和单据审核状态不是一套。</p>
+<p>办理步骤：</p>
+<ol><li>打开「安全打卡」，进入已派工电站的打卡详情。</li><li>先定位打卡，再上传至少一张现场照片，并完成安全确认。</li><li>提交后系统记录打卡人和打卡时间。</li></ol>
+<p>定位失败时，请检查手机定位权限后重试。演示环境里若出现「使用示例定位」「填入示例照片」，不能当作正式步骤。</p>
+<p>派工关闭后，相关安全打卡也会关闭。</p>
+<h2 id="注意事项">注意事项</h2>
+<ul><li>请确认工程服务商、安装队和提货仓库选择正确，避免派错队。</li><li>改派只能由队长操作，并会作废原有效明细。</li></ul><nav class="pager"><a class="prev" href="../design/stock.html"><span class="label">上一页</span>电站备货</a><a class="next" href="../install/pick.html"><span class="label">下一页</span>工程领料</a></nav>
+        <p class="site-footer">国华光伏建设管理系统 · 使用说明（按当前演示环境整理）<br>操作以线上实际界面为准</p>
+      </main>
+    </div>
+    <nav class="toc" aria-label="本页目录"><h2>本页目录</h2><a class="l2" href="#这个模块干什么">这个模块干什么</a><a class="l2" href="#谁来用">谁来用</a><a class="l2" href="#从哪里进入">从哪里进入</a><a class="l2" href="#批量派工怎么做">批量派工怎么做</a><a class="l2" href="#状态与按钮">状态与按钮</a><a class="l2" href="#提交之后会发生什么">提交之后会发生什么</a><a class="l2" href="#安全打卡">安全打卡</a><a class="l2" href="#注意事项">注意事项</a></nav>
+  </div>
+  <div class="search-mask" role="dialog" aria-label="搜索">
+    <div class="search-box">
+      <input class="search-input" type="search" placeholder="搜索使用说明…" autocomplete="off">
+      <div class="search-results"><div class="search-hint">输入关键词，例如「派工」「电表」「演示账号」。</div></div>
+    </div>
+  </div>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

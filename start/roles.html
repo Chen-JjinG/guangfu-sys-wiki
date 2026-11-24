@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>角色与权限 · 国华光伏建设管理系统</title>
+  <meta name="description" content="国华光伏建设管理系统使用说明：电脑端与现场端各模块的操作指南">
+  <link rel="icon" href="../images/logo.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="">
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <img src="../images/logo.svg" alt="国华光伏标志">
+      <span>国华光伏 <span class="full">使用说明</span></span>
+    </a>
+    <button type="button" class="header-search" data-open-search>搜索 <kbd>Ctrl K</kbd></button>
+    <nav class="top-nav"><a href="../start/overview.html">总体说明</a><a href="../appendix/accounts.html">演示账号</a><a href="../start/login.html">登录与两端</a><a href="../install/dispatch.html">安装施工</a><a href="../appendix/tips.html">附录</a></nav>
+    <button type="button" class="hamburger" aria-label="打开目录"><span></span></button>
+  </header>
+  <div class="sidebar-mask"></div>
+  <div class="layout">
+    <aside class="sidebar" aria-label="站点目录"><div class="sidebar-group open"><button type="button" class="sidebar-title">开始<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../start/overview.html">总体说明</a><a href="../start/quick-start.html">快速上手</a><a href="../start/login.html">登录与两端</a><a href="../start/roles.html" class="active">角色与权限</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">业主与商机<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../owner/owner.html">业主管理</a><a href="../owner/opportunity.html">商机初勘</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">勘察与签约<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../survey/survey.html">电站勘察</a><a href="../survey/subsidy.html">业主补贴</a><a href="../survey/contract.html">合同签约</a><a href="../survey/filing.html">备案登记</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">设计与开工准备<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../design/design.html">电站设计</a><a href="../design/archive.html">电站建档</a><a href="../design/stock.html">电站备货</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">安装施工<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../install/dispatch.html">派工与安全打卡</a><a href="../install/pick.html">工程领料</a><a href="../install/review.html">施工复核</a><a href="../install/bracket.html">支架报装</a><a href="../install/electric.html">电气报装</a><a href="../install/meter.html">电表安装</a><a href="../install/selfcheck.html">完工自检</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">产权与消缺<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../property/property.html">产权证明</a><a href="../property/defect.html">消缺工单</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">审核与工单<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../audit/audit.html">审核中心</a><a href="../audit/workorder.html">工单中心</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">系统设置<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../settings/approval.html">审批设置</a><a href="../settings/brand.html">现场端品牌</a><a href="../settings/org.html">组织与安装队</a></div></div><div class="sidebar-group"><button type="button" class="sidebar-title">附录<svg class="caret" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6l6 6-6 6"/></svg></button><div class="sidebar-items"><a href="../appendix/tips.html">常见提示</a><a href="../appendix/accounts.html">演示账号</a><a href="../appendix/not-open.html">当前未开放的能力</a><a href="../appendix/station.html">电站查询（简要）</a></div></div></aside>
+    <div class="content-wrap">
+      <main class="content"><h1 id="角色与权限">角色与权限</h1>
+<p>权限分为两层：功能权限决定能看到哪些菜单、能做哪些操作；数据范围决定能看到哪些电站和单据。没有相应写权限时，打开单据只能看，不能保存、提交或改附件。</p>
+<h2 id="演示角色一览">演示角色一览</h2>
+<p>下表是演示环境的常用账号。密码见 <a href="../appendix/accounts.html">演示账号</a>。这些角色只是初始数据，管理员可以在「系统管理 → 角色管理」中调整菜单和权限。</p>
+<table><thead><tr><th>账号</th><th>角色</th><th>数据范围</th><th>主要做什么</th></tr></thead><tbody><tr><td>sales</td><td>开发经理</td><td>仅本人（浙江）</td><td>新建业主、商机初勘、补贴、签约、备案</td></tr><tr><td>salesjs</td><td>开发经理</td><td>仅本人（江苏）</td><td>只看到本人的江苏电站</td></tr><tr><td>surveyor</td><td>现勘员</td><td>本部门（浙江）</td><td>勘察定位、拍照、提交；可转派、设优先级</td></tr><tr><td>surveyor2</td><td>现勘员乙</td><td>本部门（浙江）</td><td>接收转派过来的勘察</td></tr><tr><td>designer</td><td>设计师</td><td>本部门（浙江）</td><td>在电站设计列表接单并提交</td></tr><tr><td>pm01</td><td>项目经理</td><td>浙江本部门及下级</td><td>办理电站建档</td></tr><tr><td>stock</td><td>仓储/供应链</td><td>全部数据</td><td>办理电站备货。界面上可能显示为「仓储专员」</td></tr><tr><td>crew</td><td>安装队负责人</td><td>本部门（浙江）</td><td>批量派工、领料、复核、支架、电气、电表、安全打卡</td></tr><tr><td>auditor</td><td>审核员</td><td>按待办处理</td><td>在审核中心通过或驳回</td></tr><tr><td>manager</td><td>分公司经理</td><td>浙江及下级，看不到江苏</td><td>可查看范围内电站，也可作为审批人</td></tr><tr><td>hqadmin</td><td>总部管理</td><td>总部及两个分公司</td><td>能看到浙江和江苏的电站</td></tr><tr><td>admin</td><td>系统管理员</td><td>全部数据</td><td>审批设置、现场端品牌、角色菜单等，不作为默认的建档或备货办理人</td></tr></tbody></table>
+<p><code>hqadmin</code> 在界面上的显示名是「总部管理」。总部账号是 <code>hqadmin</code>，不是更短的缩写；登录名需要满足平台对账号长度的要求。</p>
+<p>还可以按业务需要增加自定义审批角色，不必局限于上表。</p>
+<h2 id="功能权限">功能权限</h2>
+<p>现场端的应用入口按角色显示。打开没有权限的功能时，现场端会提示「没有该操作权限」；电脑端访问不属于本角色的页面时，会显示「抱歉，您访问的页面不存在」，点「返回首页」即可。</p>
+<p>设计单在「待接单」状态时，尚未接单的人不能直接填写或提交，系统同样会提示没有操作权限。请先在电站设计列表中接单。</p>
+<p>建设类单据（派工、领料、复核、支架、电气、电表）按有效派工明细划分可见范围：未派给本队的电站，现场负责人看不到；管理角色可以查看，但不代为填写或提交。只有安装队负责人（队长）才能新建派工批次和改派，普通队员不能建单或改派。</p>
+<h2 id="数据范围示例">数据范围示例</h2>
+<p>以江苏电站为例：江苏开发经理和总部管理都能查到，浙江分公司经理查询同一电站时会显示「暂无数据」。换 <code>sales</code> 登录，也看不到不属于本人的江苏电站。转派后，原处理人的待办中不再出现该单，由接收人继续办理。</p>
+<h2 id="只读与可编辑">只读与可编辑</h2>
+<p>以下状态的单据为只读，不能改字段、上传或保存：待审核、审核中、已完成、关闭、已提交、作废。待提交、撤回待提交、待勘察、待签约、待设计、审核驳回等状态，在具有写权限时仍可编辑。</p>
+<p>已完成的单据再点保存，系统会提示「当前单据状态不允许该操作」。</p><nav class="pager"><a class="prev" href="../start/login.html"><span class="label">上一页</span>登录与两端</a><a class="next" href="../owner/owner.html"><span class="label">下一页</span>业主管理</a></nav>
+        <p class="site-footer">国华光伏建设管理系统 · 使用说明（按当前演示环境整理）<br>操作以线上实际界面为准</p>
+      </main>
+    </div>
+    <nav class="toc" aria-label="本页目录"><h2>本页目录</h2><a class="l2" href="#演示角色一览">演示角色一览</a><a class="l2" href="#功能权限">功能权限</a><a class="l2" href="#数据范围示例">数据范围示例</a><a class="l2" href="#只读与可编辑">只读与可编辑</a></nav>
+  </div>
+  <div class="search-mask" role="dialog" aria-label="搜索">
+    <div class="search-box">
+      <input class="search-input" type="search" placeholder="搜索使用说明…" autocomplete="off">
+      <div class="search-results"><div class="search-hint">输入关键词，例如「派工」「电表」「演示账号」。</div></div>
+    </div>
+  </div>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
