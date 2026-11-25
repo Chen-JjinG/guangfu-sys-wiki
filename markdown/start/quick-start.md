@@ -46,8 +46,8 @@ flowchart LR
 
 | 端 | 演示地址 | 适合做什么 |
 | --- | --- | --- |
-| 电脑端 | [http://47.111.226.121/](http://47.111.226.121/) | 审核、查询、系统配置、集中办理 |
-| 现场端 H5 | [http://47.111.226.121/h5/](http://47.111.226.121/h5/) | 现场登记、定位打卡、拍照、提交 |
+| 电脑端 | [https://admin.yuhuisoft.cn/](https://admin.yuhuisoft.cn/) | 审核、查询、系统配置、集中办理 |
+| 现场端 H5 | [https://h5.yuhuisoft.cn/](https://h5.yuhuisoft.cn/) | 现场登记、定位打卡、拍照、提交 |
 
 租户名称填写 **国华光伏建设管理系统**。演示账号和密码见 [演示账号](/appendix/accounts.html)。
 
