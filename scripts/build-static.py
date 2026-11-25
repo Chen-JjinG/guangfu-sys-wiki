@@ -245,6 +245,35 @@ def inline(text: str, page: str) -> str:
     return "".join(parts)
 
 
+
+def render_qr_block(lines: list[str], page: str) -> str:
+    """将 ::: qr 块渲染为并排的入口二维码卡片。"""
+    cards: list[str] = []
+    for raw in lines:
+        line = raw.strip()
+        if not line:
+            continue
+        parts = [c.strip() for c in line.split("|")]
+        if len(parts) != 3:
+            raise SystemExit(f"qr 块格式应为「标签 | URL | 图片路径」，得到：{raw!r}")
+        label, url, img = parts
+        if not url.startswith("https://") or " " in url:
+            raise SystemExit(f"qr 块 URL 无效：{url!r}")
+        src = rel_to(page, img)
+        alt = f"{label}入口二维码，内容为 {url}"
+        cards.append(
+            "<figure class=\"qr-card\">"
+            f'<img class="qr" src="{esc(src)}" alt="{esc(alt)}" width="208" height="208">'
+            "<figcaption>"
+            f'<span class="qr-label">{esc(label)}</span>'
+            f'<a class="qr-link" href="{esc(url)}">{esc(url)}</a>'
+            "</figcaption></figure>"
+        )
+    if not cards:
+        raise SystemExit("qr 块没有条目")
+    return '<div class="qr-row">' + "".join(cards) + "</div>"
+
+
 def split_table_row(line: str) -> list[str]:
     line = line.strip()
     if line.startswith("|"):
@@ -301,6 +330,9 @@ def md_to_html(src: str, page: str) -> tuple[str, list[tuple[int, str, str]]]:
                 buf.append(lines[i])
                 i += 1
             i += 1
+            if kind == "qr":
+                out.append(render_qr_block(buf, page))
+                continue
             inner, _ = md_to_html("\n".join(buf), page)
             out.append(
                 f'<div class="custom-block {esc(kind)}"><p class="custom-block-title">{esc(title)}</p>{inner}</div>'

@@ -49,6 +49,13 @@ flowchart LR
 | 电脑端 | [https://admin.yuhuisoft.cn/](https://admin.yuhuisoft.cn/) | 审核、查询、系统配置、集中办理 |
 | 现场端 H5 | [https://h5.yuhuisoft.cn/](https://h5.yuhuisoft.cn/) | 现场登记、定位打卡、拍照、提交 |
 
+也可以用手机扫描下面的二维码进入对应入口。
+
+::: qr
+电脑端 | https://admin.yuhuisoft.cn/ | ../images/qr-admin-yuhuisoft.png
+现场端 | https://h5.yuhuisoft.cn/ | ../images/qr-h5-yuhuisoft.png
+:::
+
 租户名称填写 **国华光伏建设管理系统**。演示账号和密码见 [演示账号](/appendix/accounts.html)。
 
 ## 读这份说明的方法

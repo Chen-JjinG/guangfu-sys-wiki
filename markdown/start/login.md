@@ -8,6 +8,13 @@
 2. 租户填写或选择 **国华光伏建设管理系统**。
 3. 输入账号和密码，点「登录」。请使用与本人职责相符的账号，以便看到对应的菜单和电站范围。
 
+也可以用手机扫描下面的二维码进入对应入口。
+
+::: qr
+电脑端 | https://admin.yuhuisoft.cn/ | ../images/qr-admin-yuhuisoft.png
+现场端 | https://h5.yuhuisoft.cn/ | ../images/qr-h5-yuhuisoft.png
+:::
+
 ![电脑端登录页：左侧为标志和系统名称，右侧填写租户、用户名和密码](../images/pc-login.png)
 
 *图：电脑端登录页。租户请填写「国华光伏建设管理系统」。*

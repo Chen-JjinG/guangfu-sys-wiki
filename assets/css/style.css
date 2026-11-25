@@ -217,12 +217,58 @@ code {
   vertical-align: top;
 }
 .content th { background: var(--bg-soft); font-weight: 650; }
-.content img.shot, .content p img, .content figure img {
+.content img.shot, .content p img:not(.qr), .content figure:not(.qr-card) img {
   display: block;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #fff;
   margin: 8px 0;
+}
+.qr-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+  align-items: stretch;
+  margin: 8px 0 24px;
+}
+.qr-card {
+  flex: 0 0 auto;
+  width: 240px;
+  margin: 0;
+  padding: 16px 16px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  text-align: center;
+}
+.content .qr-card img.qr {
+  display: block;
+  width: 208px;
+  height: 208px;
+  margin: 0 auto 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+.content .qr-card figcaption {
+  margin: 0;
+  color: var(--ink);
+  font-size: 14px;
+  font-style: normal;
+}
+.qr-card .qr-label {
+  display: block;
+  font-weight: 650;
+  margin-bottom: 4px;
+}
+.qr-card .qr-link {
+  display: block;
+  word-break: break-all;
+  font-size: 13px;
+  line-height: 1.45;
 }
 .content figcaption, .content p.caption, .content em.caption {
   display: block;
