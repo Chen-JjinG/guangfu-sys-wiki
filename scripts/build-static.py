@@ -63,14 +63,6 @@ NAV_GROUPS = [
     ]),
 ]
 
-TOP_NAV = [
-    ("总体说明", "start/overview.html"),
-    ("演示账号", "appendix/accounts.html"),
-    ("登录与两端", "start/login.html"),
-    ("安装施工", "install/dispatch.html"),
-    ("附录", "appendix/tips.html"),
-]
-
 FLAT_PAGES: list[tuple[str, str]] = []
 for _, items in NAV_GROUPS:
     FLAT_PAGES.extend(items)
@@ -460,10 +452,6 @@ def pager_html(page: str) -> str:
 
 def shell(page: str, title: str, body: str, toc: str, extra_class: str = "") -> str:
     prefix = root_prefix(page)
-    top = []
-    for label, href in TOP_NAV:
-        cls = ' class="active"' if href == page else ""
-        top.append(f'<a href="{esc(rel_to(page, href))}"{cls}>{esc(label)}</a>')
     page_title = title if title.startswith("国华") else f"{title} · 国华光伏建设管理系统"
     return f"""<!DOCTYPE html>
 <html lang="zh-CN" data-root="{esc(prefix)}">
@@ -482,7 +470,6 @@ def shell(page: str, title: str, body: str, toc: str, extra_class: str = "") -> 
       <span>国华光伏 <span class="full">使用说明</span></span>
     </a>
     <button type="button" class="header-search" data-open-search>搜索 <kbd>Ctrl K</kbd></button>
-    <nav class="top-nav">{''.join(top)}</nav>
     <button type="button" class="hamburger" aria-label="打开目录"><span></span></button>
   </header>
   <div class="sidebar-mask"></div>

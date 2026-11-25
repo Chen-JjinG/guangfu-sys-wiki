@@ -70,7 +70,7 @@ code {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: 8px;
+  margin-left: auto;
   padding: 6px 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -89,14 +89,6 @@ code {
   padding: 0 5px;
   background: #fff;
 }
-.top-nav {
-  margin-left: auto;
-  display: flex;
-  gap: 18px;
-  font-size: 14px;
-}
-.top-nav a { color: var(--ink); font-weight: 500; }
-.top-nav a:hover, .top-nav a.active { color: var(--brand); text-decoration: none; }
 .hamburger, .sidebar-close {
   display: none;
   border: 0;
@@ -474,8 +466,7 @@ code {
   }
   body.nav-open .sidebar { transform: none; }
   .sidebar-mask.open, body.nav-open .sidebar-mask { display: block; }
-  .hamburger { display: inline-flex; align-items: center; justify-content: center; margin-left: auto; }
-  .top-nav { display: none; }
+  .hamburger { display: inline-flex; align-items: center; justify-content: center; }
   .header-search kbd { display: none; }
   .content-wrap { padding: 24px 20px 64px; }
   .home-hero { grid-template-columns: 1fr; padding-top: 24px; }
