@@ -10,7 +10,7 @@
 2. 审核员在 [审核中心](/audit/audit.html) 通过初勘。通过后系统开启 [电站勘察](/survey/survey.html)。
 3. 现勘员完成定位、拍照并提交勘察；审核通过后，[业主补贴](/survey/subsidy.html) 与 [合同签约](/survey/contract.html) 同时开启。
 4. 开发经理办理补贴和签约。补贴通过后开启 [备案登记](/survey/filing.html)；签约通过后开启 [电站设计](/design/design.html)。
-5. 设计师在电站设计列表中先接单，再填写并提交。备案和设计都通过后，开启 [电站建档](/design/archive.html)。
+5. 设计师打开电站设计的「待接单」，点「接单」。单据进入「待设计」后，再填写并提交。备案和设计都通过后，开启 [电站建档](/design/archive.html)。
 6. 项目经理办理建档。建档通过后，[电站备货](/design/stock.html) 与 [安装队派工](/install/dispatch.html) 同时开启。
 7. 仓储办理备货；安装队负责人新建派工批次并提交。备货通过后开启 [工程领料](/install/pick.html)，但领料必须等派工完成才能提交。
 8. 派工通过后开启 [施工复核](/install/review.html)；复核通过且领料完成后，才能提交 [支架报装](/install/bracket.html) 和 [电气报装](/install/electric.html)。
