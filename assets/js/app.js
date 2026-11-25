@@ -96,7 +96,7 @@
     q = (q || "").trim();
     var index = window.SEARCH_INDEX || [];
     if (!q) {
-      results.innerHTML = '<div class="search-hint">输入关键词，例如「派工」「电表」「演示账号」。</div>';
+      results.innerHTML = '<div class="search-hint">输入关键词，例如「派工」「电表」「勘察」。</div>';
       return;
     }
     var hits = [];

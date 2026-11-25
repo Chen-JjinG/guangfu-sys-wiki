@@ -1,18 +1,18 @@
 # 快速上手
 
-这份说明介绍如何在 **国华光伏建设管理系统** 中办理户用分布式光伏业务。请先登录，再按职责进入对应模块。完整账号表见 [演示账号](/appendix/accounts.html)。
+这份说明介绍如何在 **国华光伏建设管理系统** 中办理户用分布式光伏业务。请先登录，再按职责进入对应模块。
 
 ## 建议走一遍的主路径
 
-下面是一条完整的主路径，用来理解各环节如何衔接。演示时请换用与职责相符的账号，不要用同一个管理员账号包办所有单据。
+下面是一条完整的主路径，用来理解各环节如何衔接。请按职责分别办理，不要由同一个人包办所有单据。
 
-1. 用开发经理账号（如 `sales`）登录现场端或电脑端，在 [业主管理](/owner/owner.html) 中新建业主，再在 [商机初勘](/owner/opportunity.html) 中建单并提交。
-2. 用审核员账号（`auditor`）在 [审核中心](/audit/audit.html) 通过初勘。通过后系统开启 [电站勘察](/survey/survey.html)。
-3. 用现勘员账号（`surveyor`）完成定位、拍照并提交勘察；审核通过后，[业主补贴](/survey/subsidy.html) 与 [合同签约](/survey/contract.html) 同时开启。
+1. 开发经理登录现场端或电脑端，在 [业主管理](/owner/owner.html) 中新建业主，再在 [商机初勘](/owner/opportunity.html) 中建单并提交。
+2. 审核员在 [审核中心](/audit/audit.html) 通过初勘。通过后系统开启 [电站勘察](/survey/survey.html)。
+3. 现勘员完成定位、拍照并提交勘察；审核通过后，[业主补贴](/survey/subsidy.html) 与 [合同签约](/survey/contract.html) 同时开启。
 4. 开发经理办理补贴和签约。补贴通过后开启 [备案登记](/survey/filing.html)；签约通过后开启 [电站设计](/design/design.html)。
-5. 设计师（`designer`）在电站设计列表中先接单，再填写并提交。备案和设计都通过后，开启 [电站建档](/design/archive.html)。
-6. 项目经理（`pm01`）办理建档。建档通过后，[电站备货](/design/stock.html) 与 [安装队派工](/install/dispatch.html) 同时开启。
-7. 仓储（`stock`）办理备货；安装队负责人（`crew`）新建派工批次并提交。备货通过后开启 [工程领料](/install/pick.html)，但领料必须等派工完成才能提交。
+5. 设计师在电站设计列表中先接单，再填写并提交。备案和设计都通过后，开启 [电站建档](/design/archive.html)。
+6. 项目经理办理建档。建档通过后，[电站备货](/design/stock.html) 与 [安装队派工](/install/dispatch.html) 同时开启。
+7. 仓储办理备货；安装队负责人新建派工批次并提交。备货通过后开启 [工程领料](/install/pick.html)，但领料必须等派工完成才能提交。
 8. 派工通过后开启 [施工复核](/install/review.html)；复核通过且领料完成后，才能提交 [支架报装](/install/bracket.html) 和 [电气报装](/install/electric.html)。
 9. 支架和电气都完成后，开启 [电表安装](/install/meter.html)。完工自检以电气报装中的 PDF 上传完成，见 [完工自检](/install/selfcheck.html)。
 
@@ -56,7 +56,7 @@ flowchart LR
 现场端 | https://h5.yuhuisoft.cn/ | ../images/qr-h5-yuhuisoft.png
 :::
 
-租户名称填写 **国华光伏建设管理系统**。演示账号和密码见 [演示账号](/appendix/accounts.html)。
+租户名称填写 **国华光伏建设管理系统**。登录步骤见 [登录与两端](/start/login.html)。
 
 ## 读这份说明的方法
 

@@ -57,7 +57,6 @@ NAV_GROUPS = [
     ]),
     ("附录", [
         ("常见提示", "appendix/tips.html"),
-        ("演示账号", "appendix/accounts.html"),
         ("当前未开放的能力", "appendix/not-open.html"),
         ("电站查询（简要）", "appendix/station.html"),
     ]),
@@ -485,7 +484,7 @@ def shell(page: str, title: str, body: str, toc: str, extra_class: str = "") -> 
   <div class="search-mask" role="dialog" aria-label="搜索">
     <div class="search-box">
       <input class="search-input" type="search" placeholder="搜索使用说明…" autocomplete="off">
-      <div class="search-results"><div class="search-hint">输入关键词，例如「派工」「电表」「演示账号」。</div></div>
+      <div class="search-results"><div class="search-hint">输入关键词，例如「派工」「电表」「勘察」。</div></div>
     </div>
   </div>
   <script src="{esc(prefix)}assets/js/app.js"></script>
@@ -496,7 +495,7 @@ def shell(page: str, title: str, body: str, toc: str, extra_class: str = "") -> 
 
 def home_body(page: str) -> str:
     note = md_to_html(
-        "请先阅读 [总体说明](/start/overview.html)，其中包含系统介绍、主流程、角色分工，以及可供演示使用的账号和密码。左侧目录可以展开或收起，右上角可以搜索，每一页右侧是本页目录。",
+        "请先阅读 [总体说明](/start/overview.html)，其中包含系统介绍、主流程和角色分工。左侧目录可以展开或收起，右上角可以搜索，每一页右侧是本页目录。",
         page,
     )[0]
     return f"""
@@ -506,7 +505,7 @@ def home_body(page: str) -> str:
     <p class="lead">户用分布式光伏从线索、勘察、签约到施工、装表的操作手册。电脑端适合审核、查询和集中办理，现场端适合登记、定位、拍照和提交。两端共用同一套账号和数据。</p>
     <div class="home-actions">
       <a class="btn btn-brand" href="{esc(rel_to(page, 'start/overview.html'))}">总体说明</a>
-      <a class="btn btn-alt" href="{esc(rel_to(page, 'appendix/accounts.html'))}">演示账号</a>
+      <a class="btn btn-alt" href="{esc(rel_to(page, 'start/login.html'))}">登录与两端</a>
     </div>
   </div>
   <img class="home-logo" src="{esc(rel_to(page, 'images/logo.svg'))}" alt="国华光伏标志">
