@@ -25,7 +25,7 @@
 <p><strong>国华光伏建设管理系统</strong> 用于办理户用分布式光伏项目：从登记业主、商机初勘、现场勘察、补贴与签约、备案和设计，到建档、备货、派工、领料、施工复核、支架和电气报装，再到电表安装。电脑端和现场端共用同一套账号和数据。</p>
 <p>这份说明面向实际使用的同事和前来演示的客户，按当前演示环境可以完成的操作编写。左侧目录可以展开或收起，右上角可以搜索，每一页右侧是本页目录。</p>
 <h2 id="系统是干什么的">系统是干什么的</h2>
-<p>系统把一条电站从线索做到装表的过程拆成一张张业务单据。每一张单都有自己的状态、办理人和审核节点。上一环节完成后，系统会按「开启条件」打开下一张单；有的环节还有「限制提交」，例如领料必须等派工完成才能提交。</p>
+<p>系统把一座电站从线索跟进到装表的全过程，拆成一张张业务单据。每一张单都有自己的状态、办理人和审核节点。上一环节完成后，系统会按「开启条件」打开下一张单；有的环节还有「限制提交」，例如领料必须等派工完成才能提交。</p>
 <p>它不替代供电公司或电网侧的正式并网手续，也不在这一期提供电站发电监控、质量整改整单、变更对照、电子签署或证件自动识别。这些未开放能力见 <a href="../appendix/not-open.html">当前未开放的能力</a>。</p>
 <h2 id="电脑端和现场端怎么用">电脑端和现场端怎么用</h2>
 <p>系统有两个入口，登录时租户名称请填写 <strong>国华光伏建设管理系统</strong>。</p>
@@ -41,10 +41,10 @@
 <p>现场端底部是「首页」「应用」「我的」。首页有审核中心和工单中心；业务模块在「应用」的「开发/交付」里。审核中心和工单中心也可以从应用宫格进入。更细的操作见 <a href="../start/login.html">登录与两端</a>。</p>
 <h2 id="主流程走哪几步">主流程走哪几步</h2>
 <p>建议按职责分别办理，不要由同一个人包办所有单据。</p>
-<ol><li>开发经理新建 <a href="../owner/owner.html">业主</a>，再提交 <a href="../owner/opportunity.html">商机初勘</a>。</li><li>审核员在 <a href="../audit/audit.html">审核中心</a> 通过后，现勘员办理 <a href="../survey/survey.html">电站勘察</a>。</li><li>勘察通过后，<a href="../survey/subsidy.html">业主补贴</a> 与 <a href="../survey/contract.html">合同签约</a> 同时开启，由开发经理办理。</li><li>补贴通过后开启 <a href="../survey/filing.html">备案登记</a>；签约通过后开启 <a href="../design/design.html">电站设计</a>。设计师需要先接单再提交。</li><li>备案和设计都通过后，项目经理办理 <a href="../design/archive.html">电站建档</a>。</li><li>建档通过后，<a href="../design/stock.html">电站备货</a> 与 <a href="../install/dispatch.html">安装队派工</a> 同时开启。仓储办理备货，安装队负责人新建派工批次。</li><li>备货通过后开启 <a href="../install/pick.html">工程领料</a>，但要等派工完成才能提交。派工通过后开启 <a href="../install/review.html">施工复核</a>。</li><li>复核通过且领料完成后，提交 <a href="../install/bracket.html">支架报装</a> 和 <a href="../install/electric.html">电气报装</a>。<a href="../install/selfcheck.html">完工自检</a> 在电气报装里以 PDF 上传完成。</li><li>支架和电气都完成后，开启 <a href="../install/meter.html">电表安装</a>。</li></ol>
+<ol><li>开发经理新建 <a href="../owner/owner.html">业主</a>，再提交 <a href="../owner/opportunity.html">商机初勘</a>。</li><li>审核员在 <a href="../audit/audit.html">审核中心</a> 通过后，现勘员办理 <a href="../survey/survey.html">电站勘察</a>。</li><li>勘察通过后，<a href="../survey/subsidy.html">业主补贴</a> 与 <a href="../survey/contract.html">合同签约</a> 同时开启，由开发经理办理。</li><li>补贴通过后开启 <a href="../survey/filing.html">备案登记</a>；签约通过后开启 <a href="../design/design.html">电站设计</a>。设计师打开「待接单」点「接单」，单据进入「待设计」后再填写并提交。</li><li>备案和设计都通过后，项目经理办理 <a href="../design/archive.html">电站建档</a>。</li><li>建档通过后，<a href="../design/stock.html">电站备货</a> 与 <a href="../install/dispatch.html">安装队派工</a> 同时开启。仓储办理备货，安装队负责人新建派工批次。</li><li>备货通过后开启 <a href="../install/pick.html">工程领料</a>，但要等派工完成才能提交。派工通过后开启 <a href="../install/review.html">施工复核</a>。</li><li>复核通过且领料完成后，提交 <a href="../install/bracket.html">支架报装</a> 和 <a href="../install/electric.html">电气报装</a>。完工自检通过在电气报装中上传 PDF 完成，见 <a href="../install/selfcheck.html">完工自检</a>。</li><li>支架和电气都完成后，开启 <a href="../install/meter.html">电表安装</a>。</li></ol>
 <p><a href="../property/property.html">产权证明</a> 和 <a href="../property/defect.html">消缺工单</a> 是电站开发中的独立模块，不作为上述主路径的必经闸门。安全打卡跟随已派工的电站，不卡住领料或报装。更完整的示意图见 <a href="../start/quick-start.html">快速上手</a>。</p>
 <h2 id="常见角色分工">常见角色分工</h2>
-<table><thead><tr><th>角色</th><th>主要工作</th></tr></thead><tbody><tr><td>开发经理</td><td>业主、初勘、补贴、签约、备案</td></tr><tr><td>现勘员</td><td>勘察定位、拍照、转派</td></tr><tr><td>设计师</td><td>电站设计接单与提交</td></tr><tr><td>项目经理</td><td>电站建档</td></tr><tr><td>仓储</td><td>电站备货</td></tr><tr><td>安装队负责人</td><td>派工、领料、复核、报装、电表、安全打卡</td></tr><tr><td>审核员</td><td>审核中心通过或驳回</td></tr><tr><td>分公司经理</td><td>查看范围内电站，也可作为审批人</td></tr></tbody></table>
+<table><thead><tr><th>角色</th><th>主要工作</th></tr></thead><tbody><tr><td>开发经理</td><td>业主、初勘、补贴、签约、备案</td></tr><tr><td>现勘员</td><td>勘察定位、拍照、转派</td></tr><tr><td>设计师</td><td>在「待接单」中接单，再于「待设计」中填写并提交</td></tr><tr><td>项目经理</td><td>电站建档</td></tr><tr><td>仓储</td><td>电站备货</td></tr><tr><td>安装队负责人</td><td>派工、领料、复核、报装、电表、安全打卡</td></tr><tr><td>审核员</td><td>审核中心通过或驳回</td></tr><tr><td>分公司经理</td><td>查看范围内电站，也可作为审批人</td></tr></tbody></table>
 <p>审批设置、现场端品牌和角色菜单需由已授权的管理员在电脑端操作。没有写权限时只能查看，不能保存或提交。数据范围不同，能看到的电站也不同，详见 <a href="../start/roles.html">角色与权限</a>。</p><nav class="pager"><span></span><a class="next" href="../start/quick-start.html"><span class="label">下一页</span>快速上手</a></nav>
         <p class="site-footer">国华光伏建设管理系统 · 使用说明（按当前演示环境整理）<br>操作以线上实际界面为准</p>
       </main>
