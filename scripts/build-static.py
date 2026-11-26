@@ -57,6 +57,7 @@ NAV_GROUPS = [
     ]),
     ("附录", [
         ("常见提示", "appendix/tips.html"),
+        ("业务下拉项说明", "appendix/dropdowns.html"),
         ("当前未开放的能力", "appendix/not-open.html"),
         ("电站查询（简要）", "appendix/station.html"),
     ]),
